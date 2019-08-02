@@ -1,25 +1,24 @@
-# ec2-launch-server
-==============
-Ansible Playbook for provisioning CentOS/RHEL AWS EC2 servers.
+# ansible-ec2-server
 
-## Instructions
-   - Clone repo, update environment variables and the variables.yml file.
+- Ansible Playbook for provisioning CentOS 7 AWS EC2 servers.
+
+## Before Install
+
+- Update Environment Variables.
 ```
-git clone https://github.com/rgdevops123/ansible-ec2-server
-cd ansible-ec2-server
-
 export AWS_ACCESS_KEY_ID=<Access Key ID>
 export AWS_SECRET_ACCESS_KEY=< Secret Access Key>
+```
 
-vi variables.yml
+- Update the the variables in vars/main.yml.
+```
+vi vars/main.yml
 ```
 
    - Run the playbook
 ```
 ansible-playbook ec2_provision.yml
 ```
-
-   - Copy over your ssh key.
 
    - Connect to Instance.
 ```
