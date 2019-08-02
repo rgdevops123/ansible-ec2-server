@@ -24,5 +24,5 @@ ansible-playbook ec2_provision.yml
 ### Access your Servers.
    - Connect to Instance.
 ```
-$ ssh -i <YOUR_SSH_KEY>.pem centos@<INSTANCE_PUBLIC_IP>
+ssh -i <YOUR_SSH_KEY>.pem centos@<INSTANCE_PUBLIC_IP>
 ```
