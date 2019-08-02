@@ -2,7 +2,7 @@
 
 - Ansible Playbook for provisioning CentOS 7 AWS EC2 servers.
 
-## Before Install
+## Before Install.
 
 - Update Environment Variables.
 ```
@@ -15,11 +15,13 @@ export AWS_SECRET_ACCESS_KEY=< Secret Access Key>
 vi vars/main.yml
 ```
 
-   - Run the playbook
+### Provision Servers.
+   - Run the playbook.
 ```
 ansible-playbook ec2_provision.yml
 ```
 
+### Access your Servers.
    - Connect to Instance.
 ```
 $ ssh -i <YOUR_SSH_KEY>.pem centos@<INSTANCE_PUBLIC_IP>
