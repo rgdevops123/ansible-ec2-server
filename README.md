@@ -18,7 +18,7 @@ vi vars/main.yml
 ### Provision Servers.
    - Run the playbook.
 ```
-ansible-playbook ec2_provision.yml
+ansible-playbook -i hosts ec2_provision.yml
 ```
 
 ### Access your Servers.
